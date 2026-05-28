@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Polityka Prywatności — Drzewostan</title>
+    <meta name="description" content="Polityka prywatności aplikacji Drzewostan — informacje o przetwarzaniu danych, uprawnieniach i przechowywaniu danych na urządzeniu."/>
+    <link rel="icon" type="image/png" href="assets/icon.png"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <style>
+        .pp-hero {
+            background: var(--pale-sage);
+            padding: 72px 24px 56px;
+            text-align: center;
+            border-bottom: 1px solid var(--light-sage);
+        }
+        .pp-hero .hero-badge { margin-bottom: 16px; }
+        .pp-hero h1 {
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            font-weight: 800;
+            color: var(--gray-900);
+            margin-bottom: 12px;
+        }
+        .pp-hero p {
+            color: var(--gray-500);
+            font-size: 1rem;
+            max-width: 520px;
+            margin: 0 auto;
+        }
+
+        .pp-body {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 64px 24px 96px;
+        }
+
+        .pp-toc {
+            background: var(--light-sage);
+            border-radius: var(--radius-lg);
+            padding: 28px 32px;
+            margin-bottom: 56px;
+        }
+        .pp-toc h2 {
+            font-size: .8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .06em;
+            color: var(--deep-moss);
+            margin-bottom: 14px;
+        }
+        .pp-toc ol {
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .pp-toc li a {
+            color: var(--forest-green);
+            text-decoration: none;
+            font-size: .9rem;
+            font-weight: 500;
+            transition: color .2s;
+        }
+        .pp-toc li a:hover { color: var(--deep-moss); text-decoration: underline; }
+
+        .pp-section {
+            margin-bottom: 52px;
+            scroll-margin-top: 80px;
+        }
+        .pp-section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .pp-num {
+            flex-shrink: 0;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--forest-green);
+            color: var(--white);
+            font-weight: 800;
+            font-size: .8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .pp-section h2 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--gray-900);
+        }
+        .pp-section p {
+            color: var(--gray-600);
+            font-size: .95rem;
+            line-height: 1.75;
+            margin-bottom: 14px;
+        }
+        .pp-section p:last-child { margin-bottom: 0; }
+
+        .pp-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: .88rem;
+        }
+        .pp-table th {
+            background: var(--light-sage);
+            color: var(--deep-moss);
+            font-weight: 700;
+            text-align: left;
+            padding: 10px 14px;
+            border: 1px solid var(--off-white);
+        }
+        .pp-table td {
+            padding: 10px 14px;
+            border: 1px solid var(--off-white);
+            color: var(--gray-600);
+            vertical-align: top;
+            line-height: 1.55;
+        }
+        .pp-table tr:nth-child(even) td { background: var(--pale-sage); }
+
+        .pp-highlight {
+            background: var(--light-sage);
+            border-left: 3px solid var(--olive-green);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+        .pp-highlight p {
+            margin: 0;
+            font-size: .9rem;
+            color: var(--deep-moss);
+        }
+
+        .pp-warning {
+            background: #fff8e1;
+            border-left: 3px solid var(--golden);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+        .pp-warning p {
+            margin: 0;
+            font-size: .9rem;
+            color: #7a5c00;
+        }
+
+        .pp-divider {
+            border: none;
+            border-top: 1px solid var(--light-sage);
+            margin: 0 0 52px;
+        }
+
+        .pp-contact-card {
+            background: var(--dark-green);
+            border-radius: var(--radius-xl);
+            padding: 40px;
+            text-align: center;
+            margin-top: 56px;
+        }
+        .pp-contact-card h3 {
+            color: var(--white);
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .pp-contact-card p {
+            color: var(--off-white);
+            opacity: .7;
+            font-size: .9rem;
+            margin-bottom: 20px;
+        }
+        .pp-contact-card a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--forest-green);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: .95rem;
+            padding: 12px 28px;
+            border-radius: var(--radius-md);
+            transition: background .2s, transform .2s;
+        }
+        .pp-contact-card a:hover { background: var(--deep-moss); transform: translateY(-1px); }
+
+        @media (max-width: 600px) {
+            .pp-hero { padding: 56px 20px 40px; }
+            .pp-body  { padding: 40px 20px 64px; }
+            .pp-toc   { padding: 20px; }
+            .pp-table { font-size: .82rem; }
+            .pp-contact-card { padding: 28px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/icon.png" alt="Drzewostan" class="logo-img"/>
+            <span class="logo-text">Drzewostan</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html#features">Funkcje</a></li>
+            <li><a href="index.html#gallery">Galeria</a></li>
+            <li><a href="index.html#download" class="nav-cta">Pobierz</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="pp-hero">
+    <div class="hero-badge">Dokument prawny</div>
+    <h1>Polityka Prywatności</h1>
+    <p>Przejrzyste informacje o tym, jakie dane przetwarza aplikacja Drzewostan i w jaki sposób są chronione.</p>
+</div>
+
+<!-- BODY -->
+<div class="pp-body">
+
+    <!-- Ostatnia aktualizacja -->
+    <p style="text-align:center; font-size:.85rem; color:var(--gray-400); margin-bottom:48px;">
+        Ostatnia aktualizacja: <strong>28 maja 2026 r.</strong>
+    </p>
+
+    <!-- SPIS TREŚCI -->
+    <div class="pp-toc">
+        <h2>Spis treści</h2>
+        <ol>
+            <li><a href="#s1">Administrator danych</a></li>
+            <li><a href="#s2">Jakie dane przetwarza aplikacja</a></li>
+            <li><a href="#s3">Lokalizacja i GPS</a></li>
+            <li><a href="#s4">Usługi zewnętrzne (mapy)</a></li>
+            <li><a href="#s5">Eksport i udostępnianie PDF</a></li>
+            <li><a href="#s6">Uprawnienia systemowe (Android)</a></li>
+            <li><a href="#s7">Brak kont i rejestracji</a></li>
+            <li><a href="#s8">Przechowywanie i usuwanie danych</a></li>
+            <li><a href="#s9">Prawa użytkownika</a></li>
+            <li><a href="#s10">Zmiany polityki prywatności</a></li>
+            <li><a href="#s11">Kontakt</a></li>
+        </ol>
+    </div>
+
+    <!-- 1 -->
+    <div class="pp-section" id="s1">
+        <div class="pp-section-title">
+            <div class="pp-num">1</div>
+            <h2>Administrator danych</h2>
+        </div>
+        <p>Administratorem danych osobowych przetwarzanych w związku z korzystaniem z aplikacji <strong>Drzewostan</strong> jest:</p>
+        <p><strong>Paweł Krzyściak</strong><br/>
+        Kontakt e-mail: <a href="mailto:pawkrzysciak@gmail.com" style="color:var(--forest-green);font-weight:600;">pawkrzysciak@gmail.com</a></p>
+        <div class="pp-highlight">
+            <p>Aplikacja Drzewostan jest narzędziem profesjonalnym, przeznaczonym do pracy terenowej. Nie zbiera danych w celach marketingowych, reklamowych ani analitycznych.</p>
+        </div>
+    </div>
+    <hr class="pp-divider"/>
+
+    <!-- 2 -->
+    <div class="pp-section" id="s2">
+        <div class="pp-section-title">
+            <div class="pp-num">2</div>
+            <h2>Jakie dane przetwarza aplikacja</h2>
+        </div>
+        <p>Wszystkie dane wprowadzone przez użytkownika są przechowywane <strong>wyłącznie lokalnie na urządzeniu</strong> — w bazie danych SQLite (Room). Żadne dane nie są wysyłane na zewnętrzne serwery ani chmurę.</p>
+
+        <table class="pp-table">
+            <thead>
+                <tr>
+                    <th>Kategoria danych</th>
+                    <th>Przykłady</th>
+                    <th>Cel</th>
+                    <th>Miejsce przechowywania</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Sesje szacunkowe</strong></td>
+                    <td>Nazwa oddziału, lista gatunków, pierśnice, wysokości, klasy jakości, notatki</td>
+                    <td>Inwentaryzacja drzewostanu</td>
+                    <td>Lokalnie na urządzeniu</td>
+                </tr>
+                <tr>
+                    <td><strong>Markery mapowe</strong></td>
+                    <td>Współrzędne GPS, typ markera, opis, powiązana sesja</td>
+                    <td>Oznaczanie lokalizacji w terenie</td>
+                    <td>Lokalnie na urządzeniu</td>
+                </tr>
+                <tr>
+                    <td><strong>Ustawienia</strong></td>
+                    <td>Lista gatunków, zakres pierśnic, skok pomiarowy, motyw</td>
+                    <td>Konfiguracja aplikacji</td>
+                    <td>Lokalnie na urządzeniu</td>
+                </tr>
+                <tr>
+                    <td><strong>Lokalizacja GPS</strong></td>
+                    <td>Aktualna pozycja geograficzna</td>
+                    <td>Wyświetlanie na mapie, przypinanie sesji do lokalizacji</td>
+                    <td>Tylko w pamięci — nie jest zapisywana trwale bez zgody</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr class="pp-divider"/>
+
+    <!-- 3 -->
+    <div class="pp-section" id="s3">
+        <div class="pp-section-title">
+            <div class="pp-num">3</div>
+            <h2>Lokalizacja i GPS</h2>
+        </div>
+        <p>Aplikacja korzysta z lokalizacji GPS urządzenia w następujących przypadkach:</p>
+        <p><strong>Mapa leśna</strong> — wyświetla bieżącą pozycję użytkownika na mapie podczas korzystania z ekranu mapy. Lokalizacja jest odczytywana wyłącznie gdy mapa jest aktywna.</p>
+        <p><strong>Przypinanie sesji</strong> — użytkownik może opcjonalnie przypisać współrzędne GPS do sesji szacunkowej lub markera terenowego. Jest to wyłącznie dobrowolna akcja inicjowana przez użytkownika.</p>
+        <div class="pp-highlight">
+            <p>Dane lokalizacyjne <strong>nie są</strong> wysyłane poza urządzenie, nie są udostępniane stronom trzecim ani przechowywane na serwerach zewnętrznych.</p>
+        </div>
+        <p>Aplikacja nie śledzi lokalizacji w tle (background location tracking).</p>
+    </div>
+    <hr class="pp-divider"/>
+
+    <!-- 4 -->
+    <div class="pp-section" id="s4">
+        <div class="pp-section-title">
+            <div class="pp-num">4</div>
+            <h2>Usługi zewnętrzne (mapy)</h2>
+        </div>
+        <p>Ekran mapy pobiera kafelki mapowe z zewnętrznych dostawców. Połączenie z tymi usługami następuje wyłącznie podczas korzystania z modułu mapy i wymaga dostępu do internetu.</p>
+
+        <table class="pp-table">
+            <thead>
+                <tr>
+                    <th>Usługa</th>
+                    <th>Cel</th>
+                    <th>Dane przesyłane</th>
+                    <th>Polityka prywatności</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>OpenStreetMap</strong></td>
+                    <td>Podkład mapowy (OSMDroid)</td>
+                    <td>Współrzędne widocznego obszaru mapy</td>
+                    <td><a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener" style="color:var(--forest-green);">osmfoundation.org</a></td>
+                </tr>
+                <tr>
+                    <td><strong>BDL / LMN WMS</strong></td>
+                    <td>Nakładka Leśnej Mapy Numerycznej</td>
+                    <td>Współrzędne widocznego obszaru mapy</td>
+                    <td><a href="https://www.bdl.lasy.gov.pl" target="_blank" rel="noopener" style="color:var(--forest-green);">bdl.lasy.gov.pl</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Aplikacja nie integruje żadnych SDK do śledzenia, reklam ani analityki (Google Analytics, Firebase, Facebook itp.).</p>
+    </div>
+    <hr class="pp-divider"/>
+
+    <!-- 5 -->
+    <div class="pp-section" id="s5">
+        <div class="pp-section-title">
+            <div class="pp-num">5</div>
+            <h2>Eksport i udostępnianie PDF</h2>
+        </div>
+        <p>Aplikacja umożliwia wygenerowanie raportu PDF z wybranej sesji szacunkowej. Raport jest tworzony lokalnie na urządzeniu i zapisywany w pamięci tymczasowej.</p>
+        <div class="pp-warning">
+            <p><strong>Ważne:</strong> Gdy użytkownik zdecyduje się udostępnić wygenerowany PDF (np. przez e-mail, komunikator lub chmurę), dane zawarte w dokumencie trafiają do wybranej przez użytkownika aplikacji zewnętrznej. Drzewostan nie ma kontroli nad dalszym przetwarzaniem danych przez te aplikacje.</p>
+        </div>
+        <p>Wysyłka PDF jest w pełni dobrowolna i inicjowana wyłącznie przez użytkownika. Aplikacja nigdy nie wysyła dokumentów automatycznie.</p>
+    </div>
+    <hr class="pp-divider"/>
+
+    <!-- 6 -->
+    <div class="pp-section" id="s6">
+        <div class="pp-section-title">
+            <div class="pp-num">6</div>
+            <h2>Uprawnienia systemowe (Android)</h2>
+        </div>
+        <p>Aplikacja na Androida może żądać następujących uprawnień systemowych:</p>
+
+        <table class="pp-table">
+            <thead>
+                <tr>
+                    <th>Uprawnienie</th>
+                    <th>Po co jest potrzebne</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>ACCESS_FINE_LOCATION</code><br/><code>ACCESS_COARSE_LOCATION</code></td>
+                    <td>Wyświetlanie pozycji na mapie i opcjonalne przypisanie GPS do sesji lub markera</td>
+                </tr>
+                <tr>
+                    <td><code>INTERNET</code></td>
+                    <td>Pobieranie kafelków mapowych (OSM, LMN WMS)</td>
+                </tr>
+                <tr>
+                    <td><code>WRITE_EXTERNAL_STORAGE</code> (Android ≤ 9)</td>
+                    <td>Zapisanie wygenerowanego PDF do pamięci urządzenia</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Żadne uprawnienie nie jest wykorzystywane w celu innym niż opisany powyżej. Uprawnienie lokalizacji można w każdej chwili cofnąć w systemowych ustawieniach aplikacji — spowoduje to wyłączenie funkcji GPS, natomiast pozostałe funkcje aplikacji będą działać normalnie.</p>
+    </div>
+    <hr class="pp-divider"/>
+
+    <!-- 7 -->
+    <div class="pp-section" id="s7">
+        <div class="pp-section-title">
+            <div class="pp-num">7</div>
+            <h2>Brak kont i rejestracji</h2>
+        </div>
+        <p>Drzewostan <strong>nie wymaga</strong> tworzenia konta, podawania adresu e-mail ani żadnych danych osobowych do uruchomienia i korzystania z aplikacji.</p>
+        <p>Nie istnieje żaden backend, serwer synchronizacji ani usługa chmurowa powiązana z aplikacją. Wszystkie dane użytkownika pozostają wyłącznie na jego urządzeniu.</p>
+        <div class="pp-highlight">
+            <p>Jeśli usuniesz aplikację, wszystkie dane (sesje, markery, ustawienia) zostaną trwale usunięte z urządzenia. Nie ma możliwości ich odtworzenia z serwera — bo taki nie istnieje.</p>
+        </div>
+    </div>
+    <hr class="pp-divider"/>
+
+    <!-- 8 -->
+    <div class="pp-section" id="s8">
+        <div class="pp-section-title">
+            <div class="pp-num">8</div>
+            <h2>Przechowywanie i usuwanie danych</h2>
+        </div>
+        <p>Dane są przechowywane w lokalnej bazie danych SQLite na urządzeniu użytkownika przez cały czas korzystania z aplikacji.</p>
+        <p>Użytkownik może usunąć dane w następujący sposób:</p>
+        <p>• <strong>Pojedyncza sesja szacunkowa</strong> — poprzez opcję „Usuń" w menu kontekstowym sesji. Usunięcie sesji automatycznie usuwa powiązany marker mapowy.</p>
+        <p>• <strong>Markery mapowe</strong> — poprzez opcję usunięcia z poziomu mapy.</p>
+        <p>• <strong>Wszystkie dane</strong> — poprzez odinstalowanie aplikacji z urządzenia lub wyczyszczenie jej danych w systemowych ustawieniach (Ustawienia → Aplikacje → Drzewostan → Wyczyść dane).</p>
+    </div>
+    <hr class="pp-divider"/>
+
+    <!-- 9 -->
+    <div class="pp-section" id="s9">
+        <div class="pp-section-title">
+            <div class="pp-num">9</div>
+            <h2>Prawa użytkownika</h2>
+        </div>
+        <p>Ponieważ aplikacja nie przesyła żadnych danych na zewnętrzne serwery, większość praw wynikających z RODO (dostęp, przenoszenie, sprzeciw) użytkownik realizuje samodzielnie, zarządzając danymi bezpośrednio na swoim urządzeniu.</p>
+        <p>W przypadku pytań dotyczących przetwarzania danych można skontaktować się z administratorem pod adresem: <a href="mailto:pawkrzysciak@gmail.com" style="color:var(--forest-green);font-weight:600;">pawkrzysciak@gmail.com</a>.</p>
+    </div>
+    <hr class="pp-divider"/>
+
+    <!-- 10 -->
+    <div class="pp-section" id="s10">
+        <div class="pp-section-title">
+            <div class="pp-num">10</div>
+            <h2>Zmiany polityki prywatności</h2>
+        </div>
+        <p>Administrator zastrzega sobie prawo do wprowadzania zmian w niniejszej polityce prywatności. Wszelkie istotne zmiany będą komunikowane przez aktualizację daty w nagłówku dokumentu lub poprzez powiadomienie w aplikacji.</p>
+        <p>Aktualna wersja polityki prywatności jest zawsze dostępna pod adresem strony internetowej projektu.</p>
+    </div>
+    <hr class="pp-divider"/>
+
+    <!-- 11 -->
+    <div class="pp-section" id="s11">
+        <div class="pp-section-title">
+            <div class="pp-num">11</div>
+            <h2>Kontakt</h2>
+        </div>
+        <p>W przypadku pytań, wątpliwości lub wniosków dotyczących niniejszej polityki prywatności prosimy o kontakt:</p>
+    </div>
+
+    <!-- Karta kontaktowa -->
+    <div class="pp-contact-card">
+        <h3>Masz pytania?</h3>
+        <p>Odpowiemy na wszelkie pytania dotyczące prywatności i danych w aplikacji Drzewostan.</p>
+        <a href="mailto:pawkrzysciak@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            pawkrzysciak@gmail.com
+        </a>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="assets/icon.png" alt="Drzewostan" class="logo-img footer-logo-img"/>
+                <span class="logo-text">Drzewostan</span>
+            </div>
+            <p class="footer-tagline">Bo las zasługuje na najlepszą technologię.</p>
+        </div>
+        <div class="footer-contact">
+            <span>Kontakt:</span>
+            <a href="mailto:pawkrzysciak@gmail.com">pawkrzysciak@gmail.com</a>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Drzewostan · Paweł Krzyściak · <a href="privacy-policy.html" style="color:inherit;opacity:.7;">Polityka prywatności</a></span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
