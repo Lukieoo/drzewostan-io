@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Drzewostan — Twoje Mobilne Biuro Leśne</title>
+    <meta name="description" content="Profesjonalne szacunki brakarskie, interaktywna mapa leśna z GPS i eksport raportów PDF — aplikacja dla leśników na Android i Desktop."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Drzewostan — Twoje Mobilne Biuro Leśne"/>
+    <meta property="og:description" content="Profesjonalne szacunki brakarskie, interaktywna mapa leśna z GPS i eksport raportów PDF — aplikacja dla leśników na Android i Desktop."/>
+    <meta property="og:image" content="assets/icon.png"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Drzewostan — Twoje Mobilne Biuro Leśne"/>
+    <meta name="twitter:description" content="Szacunki brakarskie, mapa leśna LMN z GPS i raporty PDF. Aplikacja dla leśników na Android i Desktop."/>
+    <meta name="twitter:image" content="assets/icon.png"/>
+    <link rel="icon" type="image/png" href="assets/icon.png"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+    <div class="nav-inner">
+        <div class="nav-logo">
+            <img src="assets/icon.png" alt="Drzewostan" class="logo-img"/>
+            <span class="logo-text">Drzewostan</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#features">Funkcje</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#how-it-works">Jak działa</a></li>
+            <li><a href="#download" class="nav-cta">Pobierz</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+        <div class="hero-badge">Wersja 2.0</div>
+        <h1 class="hero-title">
+            Twoje Mobilne<br/>
+            <span class="gradient-text">Biuro Leśne</span>
+        </h1>
+        <p class="hero-subtitle">
+            Profesjonalne szacunki brakarskie, interaktywna mapa leśna z GPS
+            i eksport raportów PDF — wszystko w jednej aplikacji na Android i Desktop.
+        </p>
+        <div class="hero-cta">
+            <a href="#download" class="btn btn-primary">Pobierz aplikację</a>
+            <a href="#features" class="btn btn-secondary">Odkryj funkcje</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-value">KMP</span>
+                <span class="stat-label">Kotlin Multiplatform</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-value">2</span>
+                <span class="stat-label">Platformy</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-value">GIS</span>
+                <span class="stat-label">Mapa leśna LMN</span>
+            </div>
+        </div>
+    </div>
+    <div class="hero-visual">
+        <div class="screens-showcase">
+
+            <div class="app-phone phone-back">
+                <div class="app-screen">
+                    <img src="assets/Screenshot_20260528_180555.png"
+                         alt="Szacunek brukarski w terenie" class="screen-shot"/>
+                </div>
+            </div>
+
+            <div class="app-phone phone-front">
+                <div class="app-screen">
+                    <img src="assets/Screenshot_20260528_181148.png" alt="Ekran startowy Drzewostan"
+                         class="screen-shot"/>
+                </div>
+            </div>
+
+            <div class="app-phone phone-back phone-right">
+                <div class="app-screen">
+                    <img src="assets/Screenshot_20260528_181034.png" alt="Mapa leśna z GPS"
+                         class="screen-shot"/>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Funkcjonalności</span>
+            <h2 class="section-title">Wszystko czego potrzebujesz w terenie</h2>
+            <p class="section-desc">Trzy filary aplikacji, które digitalizują pracę leśnika.</p>
+        </div>
+
+        <div class="features-grid">
+
+            <div class="feature-card card-highlight">
+                <div class="feature-icon-wrap green">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <h3>Szacunki Brakarskie</h3>
+                <p>Profesjonalna inwentaryzacja drzewostanu z podziałem na gatunki, klasy miarowe i
+                    klasy jakości. Automatyczne obliczanie miąższości na podstawie pierśnic i
+                    wysokości.</p>
+                <ul class="feature-list">
+                    <li>Rejestracja pierśnic i wysokości drzew</li>
+                    <li>Klasyfikacja jakości (WA–WD, sortymentacja)</li>
+                    <li>Konfigurowalny skok grubości i zakres pierśnic</li>
+                    <li>Automatyczne przeliczenia miąższości</li>
+                    <li>Generowanie raportu PDF (A4) z sesji</li>
+                    <li>Udostępnianie e-mailem i komunikatorami</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon-wrap blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2">
+                        <polygon points="3,6 9,3 15,6 21,3 21,18 15,21 9,18 3,21"/>
+                        <line x1="9" y1="3" x2="9" y2="18"/>
+                        <line x1="15" y1="6" x2="15" y2="21"/>
+                    </svg>
+                </div>
+                <h3>Interaktywna Mapa Leśna</h3>
+                <p>Mapa w terenie z nakładką Leśnej Mapy Numerycznej (LMN) z Banku Danych o Lasach,
+                    systemem GPS i niestandardowymi markerami.</p>
+                <ul class="feature-list">
+                    <li>OpenStreetMap + warstwa WMS LMN</li>
+                    <li>Śledzenie pozycji GPS w czasie rzeczywistym</li>
+                    <li>Markery: drzewa, mrowiska, pomniki przyrody</li>
+                    <li>Przypinanie szacunków do lokalizacji</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon-wrap orange">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="20" x2="18" y2="10"/>
+                        <line x1="12" y1="20" x2="12" y2="4"/>
+                        <line x1="6" y1="20" x2="6" y2="14"/>
+                    </svg>
+                </div>
+                <h3>Analiza Wizualna</h3>
+                <p>Wbudowane wykresy do szybkiej analizy zebranych danych. Struktura gatunkowa,
+                    rozkład miąższości i klas jakości — bez wychodzenia z aplikacji.</p>
+                <ul class="feature-list">
+                    <li>Wykres kołowy struktury gatunkowej</li>
+                    <li>Wykresy miąższości i liczby drzew wg gatunków</li>
+                    <li>Rozkład klas grubości dla każdego gatunku</li>
+                    <li>Podgląd sortymentów i klas jakości</li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Galeria</span>
+            <h2 class="section-title">Aplikacja w akcji</h2>
+            <p class="section-desc">Prawdziwe ekrany — dokładnie to, co zobaczysz na swoim
+                urządzeniu.</p>
+        </div>
+    </div>
+    <div class="gallery-scroll-wrap">
+        <p class="gallery-hint">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15,18 9,12 15,6"/></svg>
+            przesuń aby zobaczyć więcej
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9,18 15,12 9,6"/></svg>
+        </p>
+        <div class="gallery-scroll">
+
+            <div class="gallery-item">
+                <div class="gallery-frame">
+                    <img src="assets/Screenshot_20260528_181148.png" alt="Ekran startowy"/>
+                </div>
+                <span class="gallery-caption">Ekran startowy</span>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-frame">
+                    <img src="assets/Screenshot_20260528_181138.png" alt="Historia szacunków"/>
+                </div>
+                <span class="gallery-caption">Historia szacunków</span>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-frame">
+                    <img src="assets/Screenshot_20260528_180555.png" alt="Szacunek w terenie"/>
+                </div>
+                <span class="gallery-caption">Szacunek w terenie</span>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-frame">
+                    <img src="assets/Screenshot_20260528_180849.png" alt="Menu akcji szacunku"/>
+                </div>
+                <span class="gallery-caption">Menu akcji</span>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-frame">
+                    <img src="assets/Screenshot_20260528_181011.png" alt="Raport i analiza"/>
+                </div>
+                <span class="gallery-caption">Raport i analiza</span>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-frame">
+                    <img src="assets/Screenshot_20260528_181034.png" alt="Mapa leśna z GPS"/>
+                </div>
+                <span class="gallery-caption">Mapa leśna</span>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-frame">
+                    <img src="assets/Screenshot_20260528_180815.png" alt="Zarządzanie gatunkami"/>
+                </div>
+                <span class="gallery-caption">Zarządzanie gatunkami</span>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-frame">
+                    <img src="assets/Screenshot_20260528_184412.png" alt="Ustawienia aplikacji"/>
+                </div>
+                <span class="gallery-caption">Ustawienia</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works" id="how-it-works">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Workflow</span>
+            <h2 class="section-title">Jak działa Drzewostan</h2>
+            <p class="section-desc">Od terenu do raportu — prosty, spójny przepływ pracy.</p>
+        </div>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h3>Utwórz sesję szacunkową</h3>
+                    <p>Nadaj nazwę oddziału i wybierz gatunki drzew, które będziesz inwentaryzować.
+                        Sesja przechowuje wszystkie dane pomiarowe w jednym miejscu.</p>
+                </div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h3>Zbierz dane w terenie</h3>
+                    <p>Wpisuj pierśnice i wysokości drzew na bieżąco. Aplikacja natychmiast oblicza
+                        miąższość. Opcjonalnie przypisz GPS do lokalizacji szacunku na mapie.</p>
+                </div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h3>Analizuj na mapie</h3>
+                    <p>Otwórz mapę z nakładką LMN, sprawdź swoją pozycję GPS i zarządzaj markerami
+                        terenowymi. Wszystkie szacunki z lokalizacją widoczne są jako piny na
+                        mapie.</p>
+                </div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step">
+                <div class="step-number">04</div>
+                <div class="step-content">
+                    <h3>Wygeneruj raport PDF</h3>
+                    <p>Jednym kliknięciem wygeneruj profesjonalny raport A4 z tabelami gatunkowymi.
+                        Wyślij go e-mailem lub do dowolnego komunikatora bezpośrednio z
+                        urządzenia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PLATFORMS + POBIERZ -->
+<section class="platforms" id="download">
+    <div class="platforms-bg"></div>
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Pobierz</span>
+            <h2 class="section-title">Dostępny na każdej platformie</h2>
+            <p class="section-desc">Ta sama aplikacja, to samo doświadczenie — na telefonie w terenie
+                i przy biurku.</p>
+        </div>
+
+        <div class="platforms-grid">
+
+            <!-- Android -->
+            <div class="platform-card android">
+                <div class="pc-top">
+                    <div class="pc-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.523 15.341a5.065 5.065 0 0 1-5.027 4.635 5.065 5.065 0 0 1-5.028-4.635H17.523zM14.594 2.476l1.521-2.15a.25.25 0 0 0-.055-.348.25.25 0 0 0-.348.055l-1.554 2.196A7.988 7.988 0 0 0 12 1.942c-.761 0-1.49.107-2.175.293L8.272.038a.25.25 0 0 0-.35-.056.25.25 0 0 0-.056.35l1.522 2.15A8.02 8.02 0 0 0 4 9.918h16a8.02 8.02 0 0 0-5.406-7.442zM9.5 7.418a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5zm5 0a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5z"/>
+                        </svg>
+                    </div>
+                    <div class="pc-title-block">
+                        <h3>Android</h3>
+                        <span class="pc-sub">Smartfony i tablety · Android 9+</span>
+                    </div>
+                </div>
+                <ul class="platform-features">
+                    <li>Pełna obsługa GPS z powiadomieniami</li>
+                    <li>Mapa leśna LMN w trybie offline</li>
+                    <li>Eksport PDF i szybkie udostępnianie</li>
+                    <li>Działa bez internetu w terenie</li>
+                </ul>
+                <a href="#" class="platform-dl-btn" aria-label="Pobierz na Android">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Pobierz na Android
+                    <span class="platform-dl-soon">Wkrótce</span>
+                </a>
+            </div>
+
+            <!-- Desktop -->
+            <div class="platform-card desktop">
+                <div class="pc-top">
+                    <div class="pc-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <path d="M8 21h8"/>
+                            <path d="M12 17v4"/>
+                        </svg>
+                    </div>
+                    <div class="pc-title-block">
+                        <h3>Desktop</h3>
+                        <span class="pc-sub">Windows · macOS · Linux</span>
+                    </div>
+                </div>
+                <ul class="platform-features">
+                    <li>Wygodna praca na dużym ekranie</li>
+                    <li>Pełna parność funkcji z wersją mobilną</li>
+                    <li>Generowanie i drukowanie raportów PDF</li>
+                    <li>Ta sama baza kodu — zero kompromisów</li>
+                </ul>
+                <a href="#" class="platform-dl-btn" aria-label="Pobierz na Desktop">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Pobierz na Desktop
+                    <span class="platform-dl-soon">Wkrótce</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="assets/icon.png" alt="Drzewostan" class="logo-img footer-logo-img"/>
+                <span class="logo-text">Drzewostan</span>
+            </div>
+            <p class="footer-tagline">Bo las zasługuje na najlepszą technologię.</p>
+        </div>
+        <div class="footer-contact">
+            <span>Kontakt:</span>
+            <a href="mailto:pawkrzysciak@gmail.com">pawkrzysciak@gmail.com</a>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Drzewostan · Paweł Krzyściak · Zbudowane z Kotlin Multiplatform.</span>
+        </div>
+    </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Podgląd ekranu">
+    <button class="lightbox-close" aria-label="Zamknij">&times;</button>
+    <img src="" alt=""/>
+</div>
+
+<script>
+(function () {
+    var lb = document.getElementById('lightbox');
+    var lbImg = lb.querySelector('img');
+
+    document.querySelectorAll('.gallery-frame img').forEach(function (img) {
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', function () {
+            lbImg.src = img.src;
+            lbImg.alt = img.alt;
+            lb.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    lb.addEventListener('click', function (e) {
+        if (e.target === lb || e.target === lb.querySelector('.lightbox-close')) close();
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') close();
+    });
+
+    function close() {
+        lb.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+})();
+</script>
+
+</body>
+</html>
