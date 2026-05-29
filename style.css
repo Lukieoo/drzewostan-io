@@ -211,8 +211,16 @@ body {
 .hero-cta {
   display: flex;
   gap: 12px;
-  margin-bottom: 48px;
+  margin-bottom: 16px;
   flex-wrap: wrap;
+}
+
+.hero-free-note {
+  font-size: .85rem;
+  color: var(--olive-green);
+  opacity: .85;
+  margin-bottom: 36px;
+  letter-spacing: .03em;
 }
 
 .btn {
@@ -902,6 +910,8 @@ section { padding: 96px 0; }
 }
 
 .footer-contact a:hover { opacity: .8; }
+
+.footer-contact-sep { opacity: .4; }
 
 .footer-bottom {
   border-top: 1px solid rgba(151,182,74,.2);
