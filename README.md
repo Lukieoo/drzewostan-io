@@ -70,7 +70,7 @@ npx serve .
 
 | Platforma | Status | Wymagania |
 |-----------|--------|-----------|
-| Android | Dostępna na Google Play | Android 9+ |
+| Android | Dostępna na Google Play | Android 11+ |
 | Desktop (Windows / macOS / Linux) | Wkrótce | — |
 
 ---
