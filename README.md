@@ -3,7 +3,7 @@
 Strona internetowa projektu **Drzewostan** — profesjonalnej, w pełni darmowej aplikacji dla leśników na Android i Desktop (bez reklam, bez ukrytych opłat).
 
 - Aplikacja mobilna: [Google Play](https://play.google.com/store/apps/details?id=com.anioncode.drzewostan)
-- Aplikacja (repozytorium): [github.com/Lukieoo/Drzewostan 2.0 (private repo)] 
+- Aplikacja (repozytorium): [Drzewostan 2.0 (private repo)] 
 - Autor: [Paweł Krzyściak](https://lukieoo.github.io/pawel-krzysciak/)
 
 ---
